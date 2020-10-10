@@ -1,0 +1,541 @@
+header{
+    width: 100%;
+    min-width: 1200px;
+    height: 80px;
+}
+.head{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /*overflow: hidden;*/
+}
+.head_logo{
+    width: 182px;
+    float: left;
+}
+.head_nav{
+    float: right;
+    width: 1018px;
+    height: 80px;
+    display: flex;
+}
+.head_nav li{
+    flex:1;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    z-index: 100;
+}
+.head_nav li a:hover{
+    color: #d71718;
+    border-bottom: 1px #d71718 solid;
+}
+.subnav{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 200;
+}
+.subnav li{
+    width: 100%;
+    height: 80px;
+    color: #ffffff;
+}
+/*************************/
+.banner{
+    margin: auto;
+    width: 1440px;
+    min-width: 760px;
+    height: 680px;
+    position: relative;
+}
+.bannerUl,
+.bannerUl>li,
+.bannerUl>li>a{
+    width: 1440px;
+    height: 680px;
+}
+.bannerUl>li>a{
+    display: block;
+}
+.bannerUl>li{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+.bannerUl>.show{
+    display: block;
+    animation: showAni 0.5s both;
+}
+
+.controls{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -110px;
+    text-align: center;
+    width: 220px;
+}
+.controls>span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #cecece;
+    border: 1px #fff solid;
+    margin: 10px 10px 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.controls>.on{
+    background-color: #ff9d9d;
+}
+
+/********************/
+
+main{
+    width: 1440px;
+    height: 680px;
+    margin: auto;
+    margin-top: 50px;
+}
+main>.title{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main>.title>h3{
+    font-size: 48px;
+    color: #d71718;
+    text-align: center;
+    position: relative;
+}
+main>.title>h3:before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #d71718;
+    position: absolute;
+    top: 50%;
+    left:520px;
+    margin-top: -1px;
+}
+main>.title>h3:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #d71718;
+    position: absolute;
+    top: 50%;
+    right:520px;
+    margin-top: -1px;
+}
+main>.title>p{
+    text-align: center;
+    font-size: 18px;
+}
+main>.title>.title_en{
+    color: #d71718;
+    margin-bottom: 20px;
+}
+
+.yewu_ul{
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.yewu_ul li{
+    width: 300px;
+    height: 420px;
+    flex: 1;
+    position: relative;
+}
+.yewu_ul li>a{
+    overflow: hidden;
+}
+.yewu_ul li:nth-child(1):after,
+.yewu_ul li:nth-child(2):after,
+.yewu_ul li:nth-child(3):after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 176px;
+    background-color: #333333;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -88px;
+}
+.yewu_ul li:nth-child(1){
+    background: url("../shixiPro/yewu01.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(2){
+    background: url("../shixiPro/yewu02.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(3){
+    background: url("../shixiPro/yewu03.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(4){
+    background: url("../shixiPro/yewu04.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(1):hover{
+    background: #faf3f3  url("../shixiPro/yewu05.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(2):hover{
+    background: #faf3f3 url("../shixiPro/yewu06.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(3):hover{
+    background: #faf3f3 url("../shixiPro/yewu07.jpg") no-repeat center 20px;
+}
+.yewu_ul li:nth-child(4):hover{
+    background: #faf3f3 url("../shixiPro/yewu08.jpg") no-repeat center 20px;
+}
+.yewu_ul h4{
+    margin-top:200px;
+    font-size: 30px;
+    color: #939393;
+    text-align: center;
+}
+.yewu_ul p{
+    width: 160px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #939393;
+}
+.yewu_ul li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.yewu_ul li:nth-child(1):hover h4,
+.yewu_ul li:nth-child(2):hover h4,
+.yewu_ul li:nth-child(3):hover h4,
+.yewu_ul li:nth-child(4):hover h4{
+    color: #cc0000;
+}
+.yewu_ul li:nth-child(1):hover p,
+.yewu_ul li:nth-child(2):hover p,
+.yewu_ul li:nth-child(3):hover p,
+.yewu_ul li:nth-child(4):hover p{
+    color: #000;
+}
+/***********************/
+.main_yz{
+    width: 1440px;
+    height: 680px;
+    overflow: hidden;
+    background: url("../shixiPro/youzhi_bg.jpg") no-repeat center;
+}
+.main_yz>.title{
+    margin-top: 50px;
+}
+.yz_cont{
+    width: 1180px;
+    height: 420px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.yz_ul{
+    margin-top: 10px;
+    height: 400px;
+    width: 241px;
+    float: left;
+    box-sizing: border-box;
+    border-right: #333333 1px solid;
+}
+.yz_ul>li{
+    height: 100px;
+    width: 240px;
+    font-size: 24px;
+    line-height: 100px;
+    text-align: center;
+}
+.yz_ul>.choose{
+    background-color: #f5e1e1;
+    color: #d31a1c;
+    border-right: 5px solid #edc6c6;
+    box-sizing: border-box;
+}
+.yz_cont_ul{
+    width: 939px;
+    height: 420px;
+    float: left;
+    position: relative;
+}
+.yz_cont_ul>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.yz_cont_ul>li{
+    height: 420px;
+    display: block;
+    overflow: hidden;
+}
+.yz_cont_ul>li:nth-child(1){
+    z-index: 10;
+}
+.yz_cont_ul>li img{
+    float: left;
+}
+.yz_cont_ul>li .yz_cont_ul_li_ct{
+    width: 300px;
+    height: 360px;
+    float: left;
+    margin-top: 30px;
+    border-left: 50px solid #ccc;
+    background-color: #efefef;
+}
+.yz_cont_ul_li_ct p{
+    color: #433e3e;
+    font-size: 14px;
+    text-indent: 2em;
+    width: 16em;
+    line-height: 30px;
+    padding: 40px 0 0 30px;
+}
+.yz_cont_ul_li_ct p:nth-child(2){
+    padding-top: 0;
+}
+
+/*********************************************/
+
+.qywh_ul{
+    width: 1200px;
+    height: 464px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.qywh_ul>li{
+    width: 280px;
+    height: 464px;
+    margin: 0;
+    box-shadow: 0 0 5px #999;
+    position: relative;
+}
+.qywh_ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.qywh_ul>li:nth-child(1){
+    background: url("../shixiPro/qiye01.jpg") no-repeat center;
+}
+.qywh_ul>li:nth-child(2){
+    background: url("../shixiPro/qiye02.jpg") no-repeat center;
+}
+.qywh_ul>li:nth-child(3){
+    background: url("../shixiPro/qiye03.jpg") no-repeat center;
+}
+.qywh_ul>li:nth-child(4){
+    background: url("../shixiPro/qiye04.jpg") no-repeat center;
+}
+.qiye_font{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 18px;
+    color: #000;
+}
+/******************************/
+.pro_ul{
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.pro_ul>li{
+    width: 357px;
+    height: 300px;
+    margin: 0;
+    position: relative;
+}
+.pro_ul>li>a{
+    display: block;
+    width: 357px;
+    height: 240px;
+}
+.pro_ul>li>a>img{
+    width: 357px;
+    height: 240px;
+    opacity: .5;
+    transition: all 0.5s;
+}
+.pro_ul>li:nth-child(2)>a>img{
+    transform: scale(0.85);
+    transition: all 0.5s;
+}
+.pro_ul>li>a p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    opacity: .5;
+    transition: all 0.5s;
+}
+.pro_ul>li:hover img,
+.pro_ul>li:hover p{
+    opacity: 1;
+    color: #000000;
+    font-size: 24px;
+    line-height: 50px;
+    transform: scale(1.12);
+}
+.pro_ul>li:nth-child(2):hover img{
+    transform: scale(1);
+}
+/************************************/
+footer{
+    width: 1440px;
+    height: 602px;
+    margin: auto;
+    background-color: #323232;
+}
+.ulOne{
+    width: 100%;
+    height: 156px;
+    border-bottom: 1px solid #5a5a5a;
+}
+.foot_ul_01{
+    width: 1200px;
+    height: 156px;
+    display: flex;
+    margin: auto;
+}
+.foot_ul_01>li{
+    margin: 0;
+    height: 156px;
+    flex:1;
+}
+.ultwo{
+    width: 1200px;
+    height: 363px;
+    margin: auto;
+    overflow: hidden;
+}
+.footer_nav{
+    width: 600px;
+    height: 50px;
+    display: flex;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+}
+.footer_nav:after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: #5a5a5a;
+    position: absolute;
+    right: -30px;
+    top: 10px;
+}
+.footer_nav>li{
+    flex:1;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+.footer_subnav{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+.footer_subnav>li{
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+.foot_content{
+    height: 200px;
+    float: left;
+    color: #ffffff;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.foot_content>li{
+    line-height: 36px;
+}
+.foot_content>li:nth-child(1){
+    font-size: 24px;
+    line-height: 50px;
+}
+.code{
+    display: block;
+    width: 120px;
+    height: 119px;
+    float: left;
+    margin-top: 70px;
+}
+.footer_foot{
+    width: 100%;
+    height: 83px;
+    border-top: 1px solid #5a5a5a;
+}
+.ff_cont{
+    width: 1200px;
+    height: 83px;
+    color: #fff;
+    margin: auto;
+    overflow: hidden;
+}
+.ff_cont>p{
+    font-size: 16px;
+    line-height: 83px;
+    float: left;
+}
+.ff_icon{
+    float: right;
+    line-height: 83px;
+}
+.ff_icon>span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.ff_icon>span:nth-child(1){
+    background: url("../shixiPro/qq.jpg") no-repeat center;
+}
+.ff_icon>span:nth-child(2){
+    background: url("../shixiPro/weixin.jpg") no-repeat center;
+}
+.ff_icon>span:nth-child(3){
+    background: url("../shixiPro/phone.jpg") no-repeat center;
+}
+/* 动画设置区 */
+@keyframes showAni {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
